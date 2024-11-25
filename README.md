@@ -1,12 +1,11 @@
-```markdown
 # Simple Notes Web Application
 
-This is a simple web application for managing notes, built using Laravel. It demonstrates CRUD functionality with user authentication and validation.
+This is a simple web application for managing notes, built using **Laravel 11**. It demonstrates CRUD functionality with user authentication and validation.
 
 ---
 
 ## Features
-- **Authentication**: Powered by [Laravel Breeze](https://laravel.com/docs/10.x/starter-kits#laravel-breeze).
+- **Authentication**: Powered by [Laravel Breeze](https://laravel.com/docs/11.x/starter-kits#laravel-breeze).
 - **CRUD Operations**: Create, Read, Update, and Delete notes.
 - **Login Redirection**: After logging in, users are redirected to the `notes.index` page.
 - **User-Specific Notes**: The `notes` table is connected to the `users` table via the `user_id` foreign key.
@@ -16,6 +15,7 @@ This is a simple web application for managing notes, built using Laravel. It dem
   - `@old` directive ensures old input values are retained on validation errors.
 
 ---
+
 
 ## Installation and Setup
 
