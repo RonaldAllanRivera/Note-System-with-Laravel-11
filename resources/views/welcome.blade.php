@@ -43,6 +43,6 @@
 
                 </div>
         @endif
-        <h1 class="text-7xl">{{ config('app.name') }}</h1>
+        <h1 class="text-7xl">LiteNotes</h1>
     </body>
 </html>
