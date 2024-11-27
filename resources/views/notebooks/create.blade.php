@@ -10,11 +10,11 @@
             <div class="bg-white p-6 overflow-hidden shadow-sm sm:rounded-lg max-w-2xl">
               <form action="{{ route('notebooks.store') }}" method="post">
                 @csrf
-                <x-text-input name="name" class="w-full" placeholder="Notebook title" value="{{ @old('name') }}"></x-text-input>
+                <x-text-input name="name" class="w-full" placeholder="Notebook Name" value="{{ @old('name') }}"></x-text-input>
                 @error('name')
                     <div class="text-sm mt-1 text-red-500">{{ $message }}</div>
                 @enderror                
-                <x-primary-button class="mt-6">Save notebook</x-primary-button>
+                <x-primary-button class="mt-6">Save Notebook</x-primary-button>
               </form>
             </div>
         </div>

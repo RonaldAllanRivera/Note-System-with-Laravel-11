@@ -15,7 +15,7 @@ class NotebookController extends Controller
     public function index()
     {
         $user_id = Auth::id();
-        $notebooks = Notebook::where('user_id', $user_id)->latest('updated_at')->paginate(3);
+        $notebooks = Notebook::where('user_id', $user_id)->latest('updated_at')->get();
         return view('notebooks.index')->with('notebooks', $notebooks);
     }
 
@@ -42,6 +42,7 @@ class NotebookController extends Controller
             ]);
 
             $notebook->save();
+            return to_route('notebooks.index');
     }
 
     /**

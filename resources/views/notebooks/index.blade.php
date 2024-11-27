@@ -11,15 +11,14 @@
                 + New notebook
             </x-link-button>
             @forelse ($notebooks as $notebook)
-            <div class="bg-white p-6 overflow-hidden shadow-sm sm:rounded-lg">
-              <h2 class="font-bold text-2xl text-indigo-600">
-                <a href="{{ route('notebooks.show', $notebook) }}" class="hover:underline">{{ $notebook->name }}</a>
-                </h2>              
+            <div class="bg-white p-4 overflow-hidden shadow-sm sm:rounded-lg">
+              <h2 class="font-bold text-lg text-indigo-600">
+                {{ $notebook->name }}
+              </h2>              
             </div>
             @empty
             <p>You have no notebooks yet.</p>
             @endforelse
-            {{ $notebooks->links() }}
         </div>
     </div>
 </x-app-layout>
